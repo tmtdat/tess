@@ -1,0 +1,48 @@
+ /* Nút mở chatbot */
+    #chatbot-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #004080;
+      color: white;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      z-index: 1005;
+    }
+
+    /* Khung chứa chatbot */
+    #chatbot-container {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 100%;
+      max-width: 400px;
+      height: 550px;
+      z-index: 1004;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: white;
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      #chatbot-container {
+        width: 90%;
+        right: 5%;
+        height: 80vh;
+      }
+
+      #chatbot-button {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+      }
+    }
